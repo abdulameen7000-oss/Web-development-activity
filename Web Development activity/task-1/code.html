@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fca311;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #14213d, #4361ee);
+            color: white;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero span {
+            color: #fca311;
+        }
+
+        .hero p {
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fca311;
+            color: #14213d;
+            padding: 12px 22px;
+            margin-top: 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            scroll-margin-top: 80px;
+        }
+
+        section h2 {
+            color: #14213d;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: white;
+            max-width: 600px;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #00000015;
+            transition: 0.3s;
+            animation: slideUp 1s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px #00000025;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills span {
+            background: #14213d;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background: #fca311;
+            color: #14213d;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 35px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Abdul Ameen</span></h1>
+        <h3>Computer Science Engineering Student</h3>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <div class="card">
+            <h3>B.Tech - CSE</h3>
+            <p>NRI Institute of Technology</p>
+        </div>
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Unacademy</p>
+        </div>
+        <div class="card">
+            <h3>SSC</h3>
+            <p>Secondary School Education</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="card">
+            <p>Reading Books | Listening to Music | Coding | Playing Games</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive website developed using HTML and CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Student Information System</h3>
+            <p>A simple project to organize student information.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="card">
+            <p>Completed programming practice and learned basic web development.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>Click below to download my resume.</p>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: abdulameen@gmail.com</p>
+            <p>Phone: 7671990070</p>
+            <p>Location: Andhra Pradesh, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Abdul Ameen | My Portfolio</p>
+    </footer>
+
+</body>
+</html>

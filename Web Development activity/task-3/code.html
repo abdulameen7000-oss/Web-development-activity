@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            color: #222;
+        }
+
+        header {
+            background: #6c2bd9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #ff9800;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #222;
+        }
+
+        .banner {
+            background: linear-gradient(120deg, #ff4081, #7c4dff, #00bcd4);
+            color: white;
+            text-align: center;
+            padding: 45px 15px;
+        }
+
+        .banner h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 30px 5%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #6c2bd9;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #e0d4ff;
+            box-shadow: 0 4px 8px #0002;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #fff8e1;
+        }
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .discount {
+            background: #ff4081;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        .price {
+            color: #00a86b;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .old {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .card p {
+            margin: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: #6c2bd9;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background: #e8f5e9;
+        }
+
+        .services {
+            background: #fff0f6;
+        }
+
+        footer {
+            background: #25204a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .banner h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 ElectroMart</h1>
+        <p>Your Favorite Electronics Store</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#compare">Compare</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="banner" id="home">
+        <h2>Big Deals on Electronics!</h2>
+        <p>Laptops | Smartphones | Accessories | Smart Devices</p>
+    </div>
+
+    <section id="products">
+        <h2>✨ Our Products</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <span class="discount">20% OFF</span>
+                <div class="icon">💻</div>
+                <h3>HP Laptop</h3>
+                <p>Intel Core i5</p>
+                <p>16GB RAM | 512GB SSD</p>
+                <p class="price">₹52,000</p>
+                <p class="old">₹65,000</p>
+            </div>
+
+            <div class="card">
+                <span class="discount">10% OFF</span>
+                <div class="icon">📱</div>
+                <h3>Samsung Phone</h3>
+                <p>8GB RAM | 128GB Storage</p>
+                <p>50MP Camera</p>
+                <p class="price">₹27,000</p>
+                <p class="old">₹30,000</p>
+            </div>
+
+            <div class="card">
+                <span class="discount">25% OFF</span>
+                <div class="icon">🎧</div>
+                <h3>Headphones</h3>
+                <p>Wireless Bluetooth</p>
+                <p>30 Hours Battery</p>
+                <p class="price">₹1,500</p>
+                <p class="old">₹2,000</p>
+            </div>
+
+            <div class="card">
+                <span class="discount">15% OFF</span>
+                <div class="icon">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>Touchscreen Display</p>
+                <p>Activity Tracking</p>
+                <p class="price">₹3,400</p>
+                <p class="old">₹4,000</p>
+            </div>
+
+            <div class="card">
+                <span class="discount">20% OFF</span>
+                <div class="icon">⌨️</div>
+                <h3>Wireless Keyboard</h3>
+                <p>Bluetooth Connection</p>
+                <p>Full-Size Keyboard</p>
+                <p class="price">₹1,200</p>
+                <p class="old">₹1,500</p>
+            </div>
+
+            <div class="card">
+                <span class="discount">10% OFF</span>
+                <div class="icon">🔊</div>
+                <h3>Smart Speaker</h3>
+                <p>Wi-Fi and Bluetooth</p>
+                <p>Voice Control</p>
+                <p class="price">₹4,500</p>
+                <p class="old">₹5,000</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="compare">
+        <h2>📊 Product Comparison</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>RAM</th>
+                <th>Storage</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>HP Laptop</td>
+                <td>16GB</td>
+                <td>512GB SSD</td>
+                <td>₹52,000</td>
+            </tr>
+            <tr>
+                <td>Samsung Phone</td>
+                <td>8GB</td>
+                <td>128GB</td>
+                <td>₹27,000</td>
+            </tr>
+            <tr>
+                <td>Headphones</td>
+                <td>-</td>
+                <td>30h Battery</td>
+                <td>₹1,500</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="services" id="services">
+        <h2>🎁 Our Services</h2>
+        <div class="products">
+            <div class="card">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Delivery to your doorstep.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Secure Payment</h3>
+                <p>Safe payment options.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ Warranty</h3>
+                <p>Product warranty support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>📞 Contact Us</h2>
+        <p>Email: support@electromart.example</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Andhra Pradesh, India</p>
+    </section>
+
+    <footer>
+        <p>© 2026 ElectroMart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
