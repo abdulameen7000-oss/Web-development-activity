@@ -1,1 +1,104 @@
 # Web-development-activity
+
+# 🛒 ElectroMart – Online Electronics Store
+
+## 📌 Project Overview
+ElectroMart is an attractive and responsive online electronics catalog website developed using HTML5 and CSS3. It displays electronic products, specifications, prices, discounts, product comparisons, and customer services.
+
+## 👨‍🎓 Student Details
+
+| S.No | Details | Information |
+|---|---|---|
+| 1 | Name | Abdul Ameen |
+| 2 | Roll Number | 26000217 |
+| 3 | Class | CSE-4 |
+| 4 | Section | 19 |
+| 5 | Department | Computer Science and Engineering |
+| 6 | College | NRI Institute of Technology |
+
+## 🎯 Project Objective
+To design and develop an online electronics catalog website that allows users to view electronic products, check specifications, compare prices, and explore available services.
+
+## 🚀 Features
+- Attractive homepage.
+- Electronics product catalog.
+- Product prices and discount offers.
+- Product specifications.
+- Product comparison table.
+- Fast delivery information.
+- Secure payment information.
+- Warranty support.
+- Contact information.
+- Responsive webpage design.
+- Hover effects and colorful styling.
+
+## 📦 Products Available
+
+| S.No | Product Name | Price |
+|---|---|---:|
+| 1 | HP Laptop | ₹52,000 |
+| 2 | Samsung Phone | ₹27,000 |
+| 3 | Headphones | ₹1,500 |
+| 4 | Smart Watch | ₹3,400 |
+| 5 | Wireless Keyboard | ₹1,200 |
+| 6 | Smart Speaker | ₹4,500 |
+
+## 🛠️ Technologies Used
+
+| S.No | Technology | Purpose |
+|---|---|---|
+| 1 | HTML5 | Webpage structure |
+| 2 | CSS3 | Styling and designing |
+| 3 | CSS Grid | Product arrangement |
+| 4 | Media Queries | Responsive design |
+
+## 🌐 Website Sections
+1. Home
+2. Products
+3. Product Comparison
+4. Services
+5. Contact Us
+
+## 📂 Project Structure
+
+```text
+ElectroMart/
+│
+├── index.html
+├── README.md
+└── LICENSE
+```
+
+## 💻 How to Run the Project
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. View and explore the ElectroMart website.
+
+## 📚 Learning Outcomes
+- Learned HTML page structure.
+- Learned CSS styling techniques.
+- Understood CSS Grid layout.
+- Learned how to create product cards.
+- Understood responsive web design.
+- Learned how to create comparison tables.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+Copyright (c) 2026 Abdul Ameen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+## 👨‍💻 Author
+
+**Abdul Ameen**  
+Roll Number: 26000217  
+Class: CSE-4  
+Section: 19  
+
+© 2026 Abdul Ameen. All Rights Reserved.
